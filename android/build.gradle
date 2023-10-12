@@ -34,10 +34,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
-
-    kotlin {
-      jvmTarget = "17"
-    }
     
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -52,6 +48,10 @@ android {
     if (project.android.hasProperty("namespace")) {
         namespace 'com.adapty.flutter'
     }
+}
+
+kotlin {
+  jvmTarget = "17"
 }
 
 dependencies {
