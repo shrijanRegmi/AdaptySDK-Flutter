@@ -2,7 +2,7 @@ group 'com.adapty.flutter'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.5.20'
+    ext.kotlin_version = '1.9.10'
     repositories {
         google()
         jcenter()
@@ -29,7 +29,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 28
-    
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
